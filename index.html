@@ -103,7 +103,7 @@
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images.jpeg');
             background-size: cover;
             background-position: center;
             color: white;
@@ -168,12 +168,8 @@
         .property-image {
             height: 200px;
             width: 100%;
-            background-color: #ddd;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #777;
-            font-size: 1.2rem;
+            background-size: cover;
+            background-position: center;
         }
         
         .property-details {
@@ -433,14 +429,14 @@
                             <div class="contact-icon">📞</div>
                             <div>
                                 <strong>Phone:</strong><br>
-                                +256 (555) 123-4567
+                                +1 (555) 123-4567
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">✉️</div>
                             <div>
                                 <strong>Email:</strong><br>
-                                info@Danielpropertymasters.com
+                                info@danielpropertymasters.com
                             </div>
                         </div>
                         <div class="contact-item">
@@ -448,7 +444,7 @@
                             <div>
                                 <strong>Office:</strong><br>
                                 123 Real Estate Ave, Suite 500<br>
-                                Kampala City, EC 12345
+                                Daniel City, DC 12345
                             </div>
                         </div>
                     </div>
@@ -508,29 +504,29 @@
                 </div>
             </div>
             <div class="copyright">
-                &copy; 2025 Daniel Property Masters. All rights reserved.
+                &copy; 2023 Daniel Property Masters. All rights reserved.
             </div>
         </div>
     </footer>
 
     <script>
-        // Sample property data
+        // Sample property data with actual image filenames
         const properties = [
             {
                 id: 1,
                 title: "Riverside Commercial Plot",
-                price: "ug shs25,000,000",
-                location: "Mukono District",
+                price: "$250,000",
+                location: "North Daniel District",
                 size: "2.5 acres",
                 zoning: "Commercial",
                 description: "Prime commercial plot with highway frontage and all utilities available. Perfect for retail development.",
-                image: "riverside-plot.jpg"
+                image: "1000063462.jpg"
             },
             {
                 id: 2,
                 title: "Oakwood Residential Plots",
-                price: "shs 15,000,000",
-                location: "Mukono",
+                price: "$150,000",
+                location: "West Daniel Suburbs",
                 size: "1 acre each",
                 zoning: "Residential",
                 description: "Beautiful residential plots in a developing neighborhood with scenic views and easy access to amenities.",
@@ -539,8 +535,8 @@
             {
                 id: 3,
                 title: "Hillside Agricultural Land",
-                price: "shs 350,000,000",
-                location: "Matuga",
+                price: "$350,000",
+                location: "South Daniel Valley",
                 size: "10 acres",
                 zoning: "Agricultural",
                 description: "Fertile agricultural land with water rights, ideal for farming or vineyard development.",
@@ -549,8 +545,8 @@
             {
                 id: 4,
                 title: "Downtown Mixed-Use Plot",
-                price: "shs 50,000,000",
-                location: "Kawala",
+                price: "$500,000",
+                location: "Daniel City Center",
                 size: "0.75 acres",
                 zoning: "Mixed-Use",
                 description: "Highly sought-after downtown plot zoned for mixed-use development with commercial and residential potential.",
@@ -559,8 +555,8 @@
             {
                 id: 5,
                 title: "Lakeview Estate Plot",
-                price: "shs 75,000,000",
-                location: "Wakiso",
+                price: "$750,000",
+                location: "East Daniel Lakeside",
                 size: "5 acres",
                 zoning: "Residential",
                 description: "Exclusive lakefront property with stunning views, perfect for a luxury estate home.",
@@ -569,8 +565,8 @@
             {
                 id: 6,
                 title: "Industrial Park Plot",
-                price: "shs 30,000,000",
-                location: "Kampala Industrial area",
+                price: "$300,000",
+                location: "Daniel Industrial Zone",
                 size: "3 acres",
                 zoning: "Industrial",
                 description: "Well-located industrial plot with rail access and all necessary infrastructure for manufacturing or warehousing.",
@@ -587,8 +583,7 @@
                 propertyCard.className = 'property-card';
                 
                 propertyCard.innerHTML = `
-                    <div class="property-image">
-                        [Plot Image: ${property.image}]
+                    <div class="property-image" style="background-image: url('${property.image}')">
                     </div>
                     <div class="property-details">
                         <div class="property-price">${property.price}</div>
